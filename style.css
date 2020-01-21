@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-  width: 80%;
   margin: 0 auto;
+  background-color: black;
 }
 
 header {
@@ -31,7 +31,7 @@ header::after {
 
 .logo {
   float: left;
-  padding: 20px 0;
+  padding: 20px 100px;
   color: #fff;
   font-size: 35px;
   font-weight: 600;
@@ -39,6 +39,7 @@ header::after {
 
 nav {
   float: right;
+  margin-right: 100px;
 }
 
 nav ul {
@@ -69,13 +70,13 @@ nav a:hover {
 }
 
 nav .sign-in {
-  background-color: blueviolet;
-  color: white;
-  border: 2px solid blueviolet;
+  background-color: rgba(235, 221, 30, 0.959);
+  color: black;
+  border: 2px solid rgba(235, 221, 30, 0.959);
 }
 
 nav .sign-in:hover {
-  border: 2px solid blueviolet;
+  border: 2px solid rgba(235, 221, 30, 0.959);
   background: none;
   color: #fff;
 }
@@ -86,6 +87,7 @@ nav .sign-in:hover {
   height: 500px;
   background: url(./img/bg2.png) no-repeat center;
   background-size: cover;
+  filter: blur(90%);
 }
 
 .hero-text {
@@ -97,16 +99,17 @@ nav .sign-in:hover {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+  background-color: none;
 }
 
 .hero-text h1 {
-  color: black;
+  color: lawngreen;
   font-size: 70px;
   font-weight: bold;
   letter-spacing: 1rem;
   border: 5px solid white;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px 100px;
+  background: none;
 }
 
 .hero-text .des {
@@ -114,13 +117,14 @@ nav .sign-in:hover {
   display: block;
   font-size: 26px;
   text-shadow: 0 0 10px black;
+  padding: 10px 0;
 }
 
 .btn {
   text-decoration: none;
   color: black;
   border: none;
-  background-color: yellowgreen;
+  background-color: lawngreen;
   border-radius: 50px;
   padding: 10px 20px;
 }
@@ -128,4 +132,121 @@ nav .sign-in:hover {
 .btn:hover {
   color: white;
   background-color: black;
+}
+
+.items {
+  width: 100%;
+  text-align: center;
+}
+.items .item-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding: 100px 0;
+}
+
+.item {
+  text-align: justify;
+  padding: 20px 10rem;
+}
+
+.item a {
+  text-decoration: none;
+  color: lawngreen;
+}
+
+.item h1 {
+  padding: 10px 0;
+  font-size: 25px;
+  font-weight: 200;
+  color: lawngreen;
+}
+
+.item p {
+  color: rgb(119, 119, 119);
+  font-size: 20px;
+  width: 80%;
+  border-left: 1px solid gray;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.item a:hover {
+  border-bottom: 1px solid lawngreen;
+}
+
+.team {
+  overflow: hidden;
+  text-align: center;
+  background: black;
+  padding: 100px;
+}
+
+.team h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 100px;
+}
+
+.our-img {
+  display: inline;
+}
+.our-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team-text {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  padding: 20px 200px;
+}
+
+.footer {
+  background-color: black;
+  color: #fff;
+}
+
+.foo-heading {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 30px 0; 
+}
+
+.icons {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.icons li {
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 30px;
+  padding: 20px 20px;
+  border: 1px solid lawngreen;
+  border-radius: 50%;
+  background-color: rgba(95, 153, 57, 0.5);
+  transition: .5s;
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
